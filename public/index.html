@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeLink - Blood Bank</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <aside class="sidebar">
+
+        <h1>LifeLink</h1>
+        <p>Blood Bank Management</p>
+
+        <div class="navigation">
+            <button onclick="loadDashboard()" data-role="staff">
+                Dashboard
+            </button>
+
+            <button onclick="loadInventory()">
+                Blood Inventory
+            </button>
+
+            <button onclick="loadDonors()" data-role="staff">
+                Donors
+            </button>
+
+            <button onclick="loadRequests()" data-role="staff">
+                Blood Requests
+            </button>
+
+            <button onclick="loadMyRequests()" data-role="hospital">
+                My Requests
+            </button>
+
+            <button onclick="loadAlerts()" data-role="staff">
+                Low Stock Alerts
+            </button>
+
+            <button onclick="loadProfile()">
+                My Profile
+            </button>
+        </div>
+
+        <button class="logout" onclick="logout()">
+            Logout
+        </button>
+
+    </aside>
+
+    <main>
+
+        <header>
+            <div>
+                <h2 id="pageTitle">LifeLink</h2>
+                <p id="userInfo"></p>
+            </div>
+
+            <span class="online">Blood Bank System</span>
+        </header>
+
+        <div id="message"></div>
+
+        <section id="content"></section>
+
+    </main>
+
+    <script src="js/app.js"></script>
+
+</body>
+</html>
